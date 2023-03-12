@@ -14,6 +14,7 @@
 		C61E9EED29AD1D5E00883D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61E9EEC29AD1D5E00883D0F /* Assets.xcassets */; };
 		C61E9EF029AD1D5E00883D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61E9EEE29AD1D5E00883D0F /* LaunchScreen.storyboard */; };
 		C61E9EF829AD1FB300883D0F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E9EF729AD1FB300883D0F /* SecondViewController.swift */; };
+		C6B2EF5C29B65369001E9F32 /* DataUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2EF5B29B65369001E9F32 /* DataUpdate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C61E9EEF29AD1D5E00883D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C61E9EF129AD1D5E00883D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C61E9EF729AD1FB300883D0F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C6B2EF5B29B65369001E9F32 /* DataUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUpdate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				C61E9EE329AD1D5D00883D0F /* AppDelegate.swift */,
+				C6B2EF5B29B65369001E9F32 /* DataUpdate.swift */,
 				C61E9EE529AD1D5D00883D0F /* SceneDelegate.swift */,
 				C61E9EE729AD1D5D00883D0F /* ViewController.swift */,
 				C61E9EE929AD1D5D00883D0F /* Main.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				C61E9EF829AD1FB300883D0F /* SecondViewController.swift in Sources */,
 				C61E9EE829AD1D5D00883D0F /* ViewController.swift in Sources */,
+				C6B2EF5C29B65369001E9F32 /* DataUpdate.swift in Sources */,
 				C61E9EE429AD1D5D00883D0F /* AppDelegate.swift in Sources */,
 				C61E9EE629AD1D5D00883D0F /* SceneDelegate.swift in Sources */,
 			);
