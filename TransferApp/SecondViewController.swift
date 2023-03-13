@@ -74,4 +74,19 @@ class SecondViewController: UIViewController, UpdatingDataController {
         handleUpdatedDataDelegate?.onDataUpdate(data: updatedData)
     }
     // end of #4.
+    
+    // #5. Передача данных от Б к А с помощью замыкания
+    var completionHandler: ((String) -> Void)?
+    
+    // Переход от Б к А
+    // Передача данных с помощью замыкания
+    @IBAction func saveDataWithClosure(_ sender: UIButton) {
+        // получаем обновленные данные
+        let updatedData = dataTextField.text ?? ""
+        // вызываем замыкание
+        completionHandler?(updatedData)
+        // возвращаемся на предыдущий экран
+        navigationController?.popViewController(animated: true)
+    }
+    // end of #5.
 }

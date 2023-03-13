@@ -30,7 +30,7 @@ class ViewController: UIViewController, UpdatebleDataController, DataUpdateProto
     
     // Обновляем данные в текстовой метке
     private func updateLabel(withText text: String) {
-        dataLabel.text = updatedData
+        dataLabel.text = text
     }
     
     @IBAction func editDataWithProperty(_ sender: UIButton) {
@@ -95,6 +95,30 @@ class ViewController: UIViewController, UpdatebleDataController, DataUpdateProto
         self.navigationController?.pushViewController(editScreen, animated: true)
     }
     // end of #4.
+    
+    // #5. Передача данных от Б к А с помощью замыкания
+    
+    // переход от А к Б
+    // передача данных с помощью свойства и инициализация замыкания
+    @IBAction func editDataWithClosure(_ sender: UIButton) {
+        // получаем вью контроллер
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let editScreen = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        
+        // передаем данные
+        editScreen.updatingData = dataLabel.text ?? ""
+        
+        // передаем необходимое замыкание
+        editScreen.completionHandler = { [unowned self] updatedValue in
+            updatedData = updatedValue
+            updateLabel(withText: updatedValue)
+        }
+        
+        // открываем следующий экран
+        self.navigationController?.pushViewController(editScreen, animated: true)
+    }
+    
+    // end of #5.
 
 }
 

@@ -52,17 +52,30 @@
                                     <action selector="editDataWithDelegate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ral-Ir-gpv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbQ-SY-cP4">
+                                <rect key="frame" x="30" y="677.33333333333337" width="333" height="36.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Изменить с помощью замыкания">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="editDataWithClosure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nEr-sz-pPD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DbQ-SY-cP4" secondAttribute="trailing" constant="30" id="4JF-uI-haw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wsF-vc-7tq" secondAttribute="trailing" constant="30" id="6Sz-SH-njh"/>
                             <constraint firstItem="puo-V9-g1b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AJP-Gd-0GN"/>
                             <constraint firstItem="32T-aG-pgB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="EAw-6Z-bSo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="32T-aG-pgB" secondAttribute="trailing" constant="30" id="W7D-9t-bSF"/>
+                            <constraint firstItem="DbQ-SY-cP4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="XYX-N7-e9h"/>
                             <constraint firstItem="Vbg-Kp-sbx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="b9h-2d-t5S"/>
                             <constraint firstItem="wsF-vc-7tq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="jOq-Ua-7bA"/>
                             <constraint firstItem="Vbg-Kp-sbx" firstAttribute="top" secondItem="32T-aG-pgB" secondAttribute="bottom" constant="30" id="nSg-78-AXc"/>
+                            <constraint firstItem="DbQ-SY-cP4" firstAttribute="top" secondItem="wsF-vc-7tq" secondAttribute="bottom" constant="30" id="rrt-Fr-m2H"/>
                             <constraint firstItem="32T-aG-pgB" firstAttribute="top" secondItem="puo-V9-g1b" secondAttribute="bottom" constant="30" id="s1j-3H-u7O"/>
                             <constraint firstItem="puo-V9-g1b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tTq-l6-ply"/>
                             <constraint firstItem="wsF-vc-7tq" firstAttribute="top" secondItem="Vbg-Kp-sbx" secondAttribute="bottom" constant="30" id="zDf-x7-dSs"/>
@@ -121,6 +134,16 @@
                                     <action selector="saveDataWithDelegate:" destination="L4a-C2-sPw" eventType="touchUpInside" id="W0n-KY-CXX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwX-k6-p0A">
+                                <rect key="frame" x="30" y="675.66666666666663" width="333" height="36.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Сохранить с помощью замыкания">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveDataWithClosure:" destination="L4a-C2-sPw" eventType="touchUpInside" id="IwI-XB-gsK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lgh-Yo-vea"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -130,14 +153,17 @@
                             <constraint firstItem="XU2-Qu-5Qj" firstAttribute="leading" secondItem="Lgh-Yo-vea" secondAttribute="leading" constant="30" id="7qk-fy-Vnh"/>
                             <constraint firstItem="Lgh-Yo-vea" firstAttribute="trailing" secondItem="Qly-L5-loI" secondAttribute="trailing" constant="30" id="E5Q-XU-NlQ"/>
                             <constraint firstItem="aXr-B0-TG9" firstAttribute="leading" secondItem="Lgh-Yo-vea" secondAttribute="leading" constant="30" id="H4w-MH-0fw"/>
+                            <constraint firstItem="bwX-k6-p0A" firstAttribute="top" secondItem="XU2-Qu-5Qj" secondAttribute="bottom" constant="30" id="HKD-hl-Az2"/>
                             <constraint firstItem="Lgh-Yo-vea" firstAttribute="trailing" secondItem="XU2-Qu-5Qj" secondAttribute="trailing" constant="30" id="U9r-zd-jXf"/>
                             <constraint firstItem="Qly-L5-loI" firstAttribute="leading" secondItem="Lgh-Yo-vea" secondAttribute="leading" constant="30" id="Uva-bl-Nob"/>
                             <constraint firstItem="aXr-B0-TG9" firstAttribute="top" secondItem="Qly-L5-loI" secondAttribute="bottom" constant="30" id="dCs-Gs-Y6u"/>
                             <constraint firstItem="Qly-L5-loI" firstAttribute="top" secondItem="nPn-jj-oLT" secondAttribute="bottom" constant="30" id="eBr-FU-wKV"/>
                             <constraint firstItem="XU2-Qu-5Qj" firstAttribute="top" secondItem="aXr-B0-TG9" secondAttribute="bottom" constant="30" id="iXx-Az-uxh"/>
                             <constraint firstItem="nPn-jj-oLT" firstAttribute="centerY" secondItem="3r8-pe-19a" secondAttribute="centerY" id="kXw-nQ-Vkv"/>
+                            <constraint firstItem="Lgh-Yo-vea" firstAttribute="trailing" secondItem="bwX-k6-p0A" secondAttribute="trailing" constant="30" id="oV1-rX-Pv9"/>
                             <constraint firstItem="nPn-jj-oLT" firstAttribute="centerX" secondItem="3r8-pe-19a" secondAttribute="centerX" id="xH1-nz-m3t"/>
                             <constraint firstItem="Lgh-Yo-vea" firstAttribute="trailing" secondItem="nPn-jj-oLT" secondAttribute="trailing" constant="30" id="ylJ-PG-n21"/>
+                            <constraint firstItem="bwX-k6-p0A" firstAttribute="leading" secondItem="Lgh-Yo-vea" secondAttribute="leading" constant="30" id="zQf-ES-XIs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Сцена Б" id="xcG-s9-3e9"/>
